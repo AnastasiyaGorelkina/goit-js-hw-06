@@ -9,4 +9,4 @@ inputRef.addEventListener('blur', (event) => {
         inputRef.classList.add('invalid') || inputRef.classList.replace('valid', 'invalid');
     }  
 });
-
+console.log(inputRef);
