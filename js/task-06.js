@@ -4,9 +4,9 @@ inputRef.addEventListener('blur', (event) => {
     const inputCurrentLength = event.currentTarget.value.length;
 
     if (inputCurrentLength <= inputRef.dataset.length) {
-        inputRef.classList.toggle('valid');
+        inputRef.classList.add('valid') || inputRef.classList.replace('invalid', 'valid');
     } else {
-        inputRef.classList.toggle('invalid');
+        inputRef.classList.add('invalid') || inputRef.classList.replace('valid', 'invalid');
     }  
 });
 
