@@ -22,6 +22,7 @@ function onGetAmount() {
 };
 function onDestroyBoxes() {
   boxOfBoxesRef.innerHTML = '';
+  inputRef.value = '';
 }
 
 function createBoxes(amount) {
